@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    font-family: monospace;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(78, 76, 76, 0.774),rgba(255, 255, 255, 0.931));
+}
+header h1{
+    margin: 35px 0 10px 0;
+    font-size: 7rem;
+    text-align: center;
+    color: rgb(71, 70, 70);
+}
+header p{
+    font-size: 1.2rem;
+    text-align: center;
+}
+.drums{
+    width: 100%;
+    display: flex;
+    /* background: linear-gradient(to right,rgba(243, 109, 109, 0.911),rgba(109, 109, 243, 0.911),rgba(109, 243,109 , 0.911),rgba(204, 204, 50, 0.911),rgba(185, 6, 185, 0.911),rgba(226, 130, 6, 0.911)); */
+}
+.drums>div{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    flex: 1;
+    z-index: 10;
+}
+.drum1{
+    background-color: rgb(233, 7, 7);
+}
+.drum2{
+    background-color: rgb(34, 111, 233);
+}
+.drum3{
+    background-color: rgb(120, 233, 41);
+}
+.drum4{
+    background-color: rgb(255, 251, 20);
+}
+.drum5{
+    background-color: rgb(238, 14, 238);
+}
+.drum6{
+    background-color: rgb(255, 103, 1);
+}
+@keyframes jump{
+    0%{
+bottom:0%;
+left:20%;
+    }
+    50%{
+bottom:50%;
+left:50%;
+    }
+    100%{
+bottom:0%;
+left:80%;
+    }
+}
+.balls>div{
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
